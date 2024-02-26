@@ -329,13 +329,19 @@
 
                       <div class="col-lg-6 d-flex justify-content-center">
                           <!-- Form -->
-                        <form >
-                              <input type="text" class="form-control form-control-lg" placeholder="Name">
-                              <input type="email" class="form-control mt-3" placeholder="Email">
-                              <input type="text" class="form-control mt-3" placeholder="Subject">
-                              <div class="mb-3 mt-3">
-                                  <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Project Details"></textarea>
-                              </div>
+                        <form name="contact-form" method="POST" data-netlify="true" onsubmit="submit"  data-netlify-honeypot="bot-field" class="w-100">
+                            <input type="hidden" name="form-name" value="contact-form" />
+                            <div class="form-group">
+                                <input type="text" class="form-control form-control-lg mt-3" name="name" id="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control mt-3" name="email" id="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control mt-3" name="subject" id="subject" placeholder="Subject" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control mt-3" rows="5" name="message" id="message" placeholder="Your Message" required></textarea>
                             </div>
                             <button type="submit" class="btn btn-success mt-3">Send Message</button>
                         </form>
