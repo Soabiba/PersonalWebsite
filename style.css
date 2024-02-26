@@ -25,7 +25,7 @@ body {
 
 .navbar .navbar-brand:hover,
 .navbar .navbar-nav .nav-link:hover {
-    color: #ddfc00;
+    color: #D656D6;
 }
 
 .navbar.toggled {
@@ -115,10 +115,10 @@ body {
     text-align: center;
 }
 .card:hover .servicesIcon {
-    color: #2247E0;
+    color: #D656D6;
 }
 .servicesText:hover {
-    border: 1px solid #2247E0;
+    border: 1px solid #D656D6;
 }
 
 .card-flip {
@@ -183,8 +183,8 @@ body {
     font-size: 36px;
     cursor: pointer;
 }
-  .fa-facebook:hover, .fa-instagram:hover, .fa-whatsapp:hover, .fa-linkedin:hover, .fa-discord:hover {
-    color: #2247E0;
+  .fa-facebook:hover, .fa-instagram:hover, .fa-whatsapp:hover, .fa-linkedin:hover, .fa-discord:hover, .fa-slack:hover{
+    color: #D656D6;
 }
 .fab {
     color: #000000;
