@@ -1,0 +1,197 @@
+body {
+    background-color: #020C1E; 
+    font-family: 'Roboto', sans-serif;
+    color: #e3e4e5;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1030; /* Bootstrap's default z-index for the navbar */
+}
+
+.navbar {
+  background-color: rgba(2, 12, 30, 0.6); 
+  backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(10px); 
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3); 
+}
+
+.navbar .navbar-brand {
+    color: #00FFFF;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.navbar .navbar-brand:hover,
+.navbar .navbar-nav .nav-link:hover {
+    color: #ddfc00;
+}
+
+.navbar.toggled {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    backdrop-filter: blur(10px); /* This creates the blur effect */
+}
+
+.navbar .navbar-nav .nav-link {
+    color:  #00FFFF;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.navbar-toggler {
+    border-color:  #00FFFF;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Hero Section */
+.bgimage {
+    height: 100vh;
+    background: url('images/Untitled.png') no-repeat center center/cover;
+    position: relative;
+    display: flex;
+    align-items: center; 
+    justify-content: flex-end; 
+}
+
+.hero-text {
+    text-align: right;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    color: white;
+  text-shadow: 2px 2px 4px #f7ad37;
+}
+
+/* About Section */
+#about h1, #services h1, #portfolio h1, #contact h1 {
+    text-decoration: underline;
+    text-decoration-color: #f7ad37; 
+    text-decoration-thickness: 2px; 
+    text-underline-offset: 8px; 
+    font-family: 'Roboto', sans-serif; 
+    text-align: center; 
+}
+
+#about {
+    color: #e3e4e5; 
+    padding: 120px; 
+  padding-top: 150PX; 
+  padding-bottom: 150px; 
+  position: relative;
+  font-family: 'Roboto'
+}
+
+  #services {
+    background-color: whitesmoke;
+    color: #08133F;
+    padding-top: 150px; 
+    padding-bottom: 150px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust the space between cards */
+  }
+
+  .servicesText.card {
+    height: 200px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .servicesIcon {
+      font-size: 36px;
+      text-align: center;
+      width: 100%;
+  }
+
+.card-title {
+    text-align: center;
+}
+.card:hover .servicesIcon {
+    color: #2247E0;
+}
+.servicesText:hover {
+    border: 1px solid #2247E0;
+}
+
+.card-flip {
+    perspective: 1000px;
+    width: 100%; /* Adjust width to make cards smaller */
+}
+
+.card-flip .servicesText {
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+    width: 100%; /* Ensure the card occupies the full width of its parent */
+    min-height: 200px; /* Adjust based on content */
+}
+
+.card-flip:hover .servicesText {
+    transform: rotateY(180deg);
+}
+
+.front, .back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.back {
+    transform: rotateY(180deg);
+    background-color: #f8f9fa; /* Choose a background color for the back */
+}
+
+#portfolio {
+  padding-top: 150px; 
+  padding-bottom: 150px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px; 
+}
+
+#contact {
+  background-color: whitesmoke;
+  color: #08133F;
+  text-align: center;
+  padding-top: 150px; 
+  padding-bottom: 150px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px; /* Adjust the space between cards */
+}
+
+.social-icons {
+    font-size: 36px;
+    cursor: pointer;
+}
+  .fa-facebook:hover, .fa-instagram:hover, .fa-whatsapp:hover, .fa-linkedin:hover, .fa-discord:hover {
+    color: #2247E0;
+}
+.fab {
+    color: #000000;
+}
+/* footer styling */
+#footer {
+    background-color: #899CE8;
+    text-align: center;
+}

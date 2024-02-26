@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soa's Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Soa</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <script>
+    // Wait for the DOM to be fully loaded
+    document.addEventListener("DOMContentLoaded", function () {
+      // Get the navbar and navbar toggle button elements
+      var navbar = document.querySelector('.navbar');
+      var navbarToggler = document.querySelector('.navbar-toggler');
+
+      // Listen for click events on the toggler
+      navbarToggler.addEventListener('click', function () {
+        // When clicked, toggle the 'toggled' class on the navbar
+        navbar.classList.toggle('toggled');
+      });
+    });
+  </script>
+  <!-- Main Banner -->
+  <section class="bgimage" id="home">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+          <h1 class="hero_title">Hi, it's me Soa</h1>
+          <p class="hero_desc">I am a Game Developer and Programmer</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+
+    <div class="container mt-4 pt-4">
+      <h1 class="text-center">About Me</h1>
+      <div class="row mt-4 align-items-center">
+        <div class="col-lg-12">
+          <p class="text-center">Hello there! I'm <b>Soabiba Soad</b>, a passionate game designer and programmer with a
+            knack for bringing imaginative worlds to life. With a background in both design and programming, I thrive at
+            the intersection of creativity and technology, fueled by a fascination for interactive storytelling and the
+            mechanics that make games not just playable, but memorable.</p>
+  </section>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var navbar = document.querySelector('.navbar');
+      var navbarToggler = document.querySelector('.navbar-toggler');
+
+      navbarToggler.addEventListener('click', function () {
+        navbar.classList.toggle('toggled');
+      });
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+  <!-- services section-->
+  <section id="services">
+    <div class="container">
+
+      <h1 class="text-center">Services</h1>
+      <div class="row justify-content-center">
+        <div class="row">
+          <div class="col-lg-4 mt-4">
+            <div class="card-flip">
+              <div class="card servicesText">
+                <!-- Front Side -->
+                <div class="front card-body">
+                  <i class="fas fa-map-marked-alt"></i>
+                  <h4 class="card-title mt-3">Level Design</h4>
+                  <p class="card-text mt-3">Planning and designing the game’s levels, challenges, and progression.</p>
+                </div>
+                <!-- Back Side -->
+                <div class="back card-body">
+
+                  <p class="card-text">Transforming virtual spaces into unforgettable adventures, I specialize in Level
+                    Design that balances challenge with enjoyment. My crafted levels are not just stages but stories,
+                    inviting players into worlds where every turn, obstacle, and environment enriches their gaming
+                    experience.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mt-4">
+            <div class="card-flip">
+              <div class="card servicesText">
+                <!-- Front Side -->
+                <div class="front card-body">
+                  <i class="fas fa-object-group"></i>
+                  <h4 class="card-title mt-3">UI/UX Programming</h4>
+                  <p class="card-text mt-3">Creating user interfaces and user experience designs that are intuitive and
+                    engaging.</p>
+                </div>
+                <!-- Back Side -->
+                <div class="back card-body">
+                  <p class="card-text">With a keen eye for detail and a user-centered design philosophy, my UI/UX
+                    Programming service ensures that every interaction within the game feels intuitive and engaging. I
+                    create interfaces that are not only visually appealing but also enhance the overall gameplay, making
+                    every click and command satisfying.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4">
+            <div class="card-flip">
+              <div class="card servicesText">
+                <!-- Front Side -->
+                <div class="front card-body">
+                  <i class="fas fa-robot"></i>
+                  <h4 class="card-title mt-3">AI Programming</h4>
+                  <p class="card-text mt-3">Developing artificial intelligence for non-player characters (NPCs) and game
+                    mechanics.</p>
+                </div>
+                <!-- Back Side -->
+                <div class="back card-body">
+                  <p class="card-text">I bring virtual worlds to life with sophisticated AI Programming, creating NPCs
+                    and systems that think, react, and adapt. My aim is to craft AI that offers genuine challenges and
+                    companionship to players, making each game session unique and unpredictable.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 mt-4">
+            <div class="card-flip">
+              <div class="card servicesText">
+                <!-- Front Side -->
+                <div class="front card-body">
+                  <i class="fas fa-bug"></i>
+                  <h4 class="card-title mt-3">Game Testing</h4>
+                  <p class="card-text mt-3"> Identifying and documenting game defects and issues for correction.</p>
+                </div>
+                <!-- Back Side -->
+                <div class="back card-body">
+                  <p class="card-text">Dedication to excellence drives my Game Testing service. I rigorously test every
+                    aspect of gameplay, mechanics, and user interface to unearth and fix any issues before launch. My
+                    comprehensive approach ensures a polished, bug-free game that delivers the best possible experience
+                    to players.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mt-4">
+            <div class="card-flip">
+              <div class="card servicesText">
+                <!-- Front Side -->
+                <div class="front card-body">
+                  <i class="fas fa-tasks"></i>
+                  <h4 class="card-title mt-3">Project Management</h4>
+                  <p class="card-text mt-3"> Overseeing the game development lifecycle to ensure timely delivery and
+                    quality.</p>
+                </div>
+                <!-- Back Side -->
+                <div class="back card-body">
+                  <p class="card-text">My Project Management service is centered around efficiency, creativity, and
+                    clear communication. I oversee all phases of game development, ensuring that projects stay on track,
+                    within budget, and meet the highest quality standards. My leadership transforms vision into reality,
+                    on time and beyond expectations.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4">
+            <div class="card-flip">
+              <div class="card servicesText">
+                <!-- Front Side -->
+                <div class="front card-body">
+                  <i class="fas fa-cogs"></i>
+                  <h4 class="card-title mt-3">Game Mechanics Design</h4>
+                  <p class="card-text mt-3">Creating and refining the rules and systems that drive game play.</p>
+                </div>
+                <!-- Back Side -->
+                <div class="back card-body">
+                  <p class="card-text">I create engaging and innovative game mechanics that form the heartbeat of the
+                    gaming experience. My designs focus on delivering fun, balance, and depth, ensuring that players
+                    feel challenged, rewarded, and eager to play again. I believe in mechanics that propel stories and
+                    enhance immersion.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  </section>
+  <script src="script.js"></script>
+  <!-- portfolio section-->
+  <section id="portfolio">
+    <div class="container mt-3">
+      <h1 class="text-center">Portfolio</h1>
+      <div class="row">
+        <div class="col-lg-4 mt-4">
+          <div class="card">
+            <img class="card-img-top" src="images/portfolioImage1.jpg" alt="Card image" style="width:100%">
+            <div class="card-body">
+              <h4 class="card-title">YouTube Clone</h4>
+              <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+              <div class="text-center">
+                <a href="#" class="btn btn-success">Link</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mt-4">
+          <div class="card portfolioContent">
+            <img class="card-img-top" src="images/portfolioImage4.jpg" alt="Card image" style="width:100%">
+            <div class="card-body">
+              <h4 class="card-title">Quiz App</h4>
+              <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+              <div class="text-center">
+                <a href="#" class="btn btn-success">Link</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mt-4">
+          <div class="card portfolioContent">
+            <img class="card-img-top" src="images/portfolioImage3.jpg" alt="Card image" style="width:100%">
+            <div class="card-body">
+              <h4 class="card-title">Product Landing Page</h4>
+              <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+              <div class="text-center">
+                <a href="#" class="btn btn-success">Link</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-lg-4 mt-4">
+          <div class="card portfolioContent">
+            <img class="card-img-top" src="images/portfolioImage4.jpg" alt="Card image" style="width:100%">
+            <div class="card-body">
+              <h4 class="card-title">Messaging Service</h4>
+              <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+              <div class="text-center">
+                <a href="#" class="btn btn-success">Link</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mt-4">
+          <div class="card portfolioContent">
+            <img class="card-img-top" src="images/portfolioImage1.jpg" alt="Card image" style="width:100%">
+            <div class="card-body">
+              <h4 class="card-title">Twitter Clone</h4>
+              <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+              <div class="text-center">
+                <a href="#" class="btn btn-success">Link</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mt-4">
+          <div class="card portfolioContent">
+            <img class="card-img-top" src="images/portfolioImage4.jpg" alt="Card image" style="width:100%">
+            <div class="card-body">
+              <h4 class="card-title">Blog App</h4>
+              <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+              <div class="text-center">
+                <a href="#" class="btn btn-success">Link</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+        <!-- contact section-->
+          <section id="contact">
+              <div class="container mt-3 contactContent d-flex flex-column align-items-center">
+                  <h1 class="text-center">Contact Me</h1>
+
+                  <div class="row mt-4 w-100 justify-content-center">
+                      <div class="col-lg-6 d-flex justify-content-center">
+                          <!-- Google Maps embed -->
+                          <div style="max-width: 100%; overflow: hidden; width: 100%; height: 400px;">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2135.899615769348!2d18.291641497206047!3d57.633193011704556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNTfCsDM3JzU5LjUiTiAxOMKwMTcnMzUuOSJF!5e0!3m2!1sen!2sse!4v1708961563680!5m2!1sen!2sse" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                          </div>
+                      </div>
+
+                      <div class="col-lg-6 d-flex justify-content-center">
+                          <!-- Form -->
+                        <form name="contact-form" method="POST" data-netlify="true" class="w-100">
+                            <input type="hidden" name="form-name" value="contact-form" />
+                            <div class="form-group">
+                                <input type="text" class="form-control form-control-lg mt-3" name="name" id="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control mt-3" name="email" id="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control mt-3" name="subject" id="subject" placeholder="Subject" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control mt-3" rows="5" name="message" id="message" placeholder="Your Message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-success mt-3">Send Message</button>
+                        </form>
+                      </div>
+                  </div>
+              </div>
+          </section>
+        
+        <!-- footer section-->
+        <footer id="footer">
+            <div class="container-fluid">
+                <!-- social media icons -->
+                <div class="social-icons mt-4">
+                  <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                  <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                  <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                  <a href="https://discord.com/" target="_blank"><i class="fab fa-discord"></i></a> <!-- Discord link -->
+                  <a href="https://wa.me/" target="_blank"><i class="fab fa-whatsapp"></i></a> <!-- WhatsApp link -->
+                </div>
+            </div>
+        </footer>
+</body>
+
+</html>
