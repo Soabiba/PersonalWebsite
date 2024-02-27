@@ -158,20 +158,28 @@ body {
 }
 
 #portfolio {
-  padding-top: 150px; 
+  padding-top: 150px;
   padding-bottom: 150px;
-  position: relative;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 20px; 
 }
-.button-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Full height of the viewport */
-    width: 100%; /* Full width to ensure it's not constrained */
+
+/* Ensuring the row fills the width */
+#portfolio .row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-left: 20px;
+}
+
+/* Centering content of the column */
+#portfolio .col-lg-4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 100%; /* Take the full width on smaller screens */
+  max-width: 100%; /* Prevent exceeding the container's width */
 }
 
 /* Styling the button */
@@ -183,7 +191,6 @@ body {
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
-    margin: 20px; /* Adds space around the button */
 }
 
 .btn:hover {
