@@ -166,6 +166,29 @@ body {
   flex-wrap: wrap;
   gap: 20px; 
 }
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+    width: 100%; /* Full width to ensure it's not constrained */
+}
+
+/* Styling the button */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white;
+    color: #08133F;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 20px; /* Adds space around the button */
+}
+
+.btn:hover {
+    background-color: #00FFFF;
+}
 
 #contact {
   background-color: whitesmoke;
