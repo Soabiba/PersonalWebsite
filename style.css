@@ -160,42 +160,70 @@ body {
 #portfolio {
   padding-top: 150px;
   padding-bottom: 150px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-/* Ensuring the row fills the width */
-#portfolio .row {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  padding-left: 20px;
-}
-
-/* Centering content of the column */
-#portfolio .col-lg-4 {
-  display: flex;
-  justify-content: center;
+  text-align: center;
   align-items: center;
-  flex-basis: 100%; /* Take the full width on smaller screens */
-  max-width: 100%; /* Prevent exceeding the container's width */
 }
 
 /* Styling the button */
 .btn {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 10px 10px;
     background-color: white;
     color: #08133F;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
+  
 }
 
+.btncontainer {
+    text-align: center;
+}
 .btn:hover {
     background-color: #00FFFF;
 }
+
+.skills-container h2 {
+    color: #08133F; /* Example: sets the color to a blue shade */
+  padding-bottom: 1.2cap;
+  text-decoration: underline;
+  text-decoration-color:#00FFFF; 
+  text-decoration-thickness: 2px; 
+  text-underline-offset: 8px; 
+}
+
+.skills-section {
+    display: flex;
+    justify-content: center; /* Center the container horizontally */
+    padding: 10px 10px; /* Add some padding above and below the container */
+}
+
+.skills-container {
+    background-color: whitesmoke; /* White background */
+    border-radius: 15px; /* Rounded edges */
+    padding: 20px; /* Padding inside the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
+    max-width: 80%; /* Adjust this value to control the width */
+    text-align: center; /* Center the text and content */
+}
+
+.skills-icons {
+    display: flex;
+    justify-content: center; /* Center the icons horizontally */
+    flex-wrap: wrap; /* Allow icons to wrap in smaller screens */
+    gap: 20px; /* Space between icons */
+}
+
+.custom-icon-img {
+    /* Your custom icon styles */
+    transition: transform 0.3s ease; /* Example transformation on hover */
+}
+
+.custom-icon-img:hover {
+    transform: scale(1.1); /* Slightly enlarge the icon on hover */
+}
+
+
 
 #contact {
   background-color: whitesmoke;
