@@ -1,6 +1,6 @@
 body {
     background-color: #020C1E; 
-    font-family: 'Roboto', sans-serif;
+    font-family:  'Roboto';
     color: #e3e4e5;
 }
 
@@ -72,7 +72,7 @@ body {
     text-decoration-color: #f7ad37; 
     text-decoration-thickness: 2px; 
     text-underline-offset: 8px; 
-    font-family: 'Roboto', sans-serif; 
+    font-family: 'Roboto'; 
     text-align: center; 
 }
 
@@ -80,9 +80,14 @@ body {
     color: #e3e4e5; 
     padding: 6%; 
   padding-top: 100PX; 
-  padding-bottom: 100px; 
+  padding-bottom: 150px; 
   position: relative;
   font-family: 'Roboto'
+}
+
+.abouttext {
+  padding-bottom: 50px; 
+  padding-left: 2%;
 }
 
 .imageAboutPage {
