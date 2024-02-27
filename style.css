@@ -201,7 +201,7 @@ body {
 .skills-container {
     background-color: whitesmoke; /* White background */
     border-radius: 15px; /* Rounded edges */
-    padding: 20px; /* Padding inside the container */
+    padding: 10px; /* Padding inside the container */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
     max-width: 80%; /* Adjust this value to control the width */
     text-align: center; /* Center the text and content */
@@ -223,7 +223,13 @@ body {
     transform: scale(1.1); /* Slightly enlarge the icon on hover */
 }
 
-
+.projectss-container h2 {
+  padding-bottom: 1.2cap;
+  text-decoration: underline;
+  text-decoration-color:#00FFFF; 
+  text-decoration-thickness: 2px; 
+  text-underline-offset: 8px; 
+}
 
 #contact {
   background-color: whitesmoke;
