@@ -89,7 +89,7 @@ body {
 /* Hero Section */
 .bgimage {
     height: 100vh;
-    background: url('images/Untitled.png') no-repeat center center/cover;
+    background: url('images/MainBG.png') no-repeat center center/cover;
     position: relative;
     display: flex;
     align-items: center;
@@ -160,7 +160,7 @@ body {
     display: flex;
     flex-direction: column;
     transition: transform 0.6s ease;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    box-shadow: 0 1px 5px #7c898b;
     border-radius: 10px;
     text-shadow: .2px .2px .2px #000000;
   }
@@ -323,6 +323,99 @@ i {
     text-underline-offset: 8px;
 }
 
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.project-card {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.03);
+}
+
+.project-content {
+  background-color: #fff;
+  box-shadow: 0 4px 10px #040b1d;
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Project Image Styling */
+.project-image img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-image img {
+  transform: scale(1.05);
+}
+
+/* Project Video Styling */
+.project-video iframe,
+.project-video video {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.project-card:hover .project-video iframe,
+.project-card:hover .project-video video {
+  transform: scale(1.05); /* Optional zoom-in effect on hover */
+  transition: transform 0.3s ease;
+}
+
+.project-details {
+  padding: 20px;
+  text-align: center;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #08133F;
+  font-weight: bold;
+}
+
+.project-description {
+  font-size: 1rem;
+  color: #606060;
+  margin-bottom: 20px;
+}
+
+.project-btn {
+  padding: 10px 25px;
+  background-color:  #1b9aaa;
+  color: #fff;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.project-btn:hover {
+  background-color: #7c898b;
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+
+
+
 #contact {
     background-color: whitesmoke;
     color: #08133F;
@@ -343,7 +436,7 @@ form {
     background-color: #f8f9fa; /* Light background color */
     padding: 15px; /* Padding around the form */
     border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    box-shadow: 0 1px 5px #7c898b; /* Shadow for depth */
 }
 
 
