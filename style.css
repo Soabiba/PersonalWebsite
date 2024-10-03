@@ -135,8 +135,9 @@ body {
 
 .imageAboutPage {
     border: 2px solid whitesmoke;
-    border-radius: 8px;
     width: 400px;
+    box-shadow: 0 4px 10px white; /* Shadow for depth */
+    border-radius: 10px;
 }
 
 
@@ -161,6 +162,7 @@ body {
     transition: transform 0.6s ease;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
     border-radius: 10px;
+    text-shadow: .2px .2px .2px #000000;
   }
 
   .servicesIcon {
@@ -246,10 +248,10 @@ i {
     background-color: white; /* Brighter, standout background color */
     color: #08133F; /* White text for better contrast */
     text-decoration: none;
-    border-radius: 8px; /* Slightly larger border-radius for a smoother appearance */
     font-size: 1.2rem; /* Larger font size for readability */
     font-weight: bold;
-    box-shadow: 0 4px 10px rgba(255, 220, 255, 0.15); /* Add shadow for depth */
+    box-shadow: 0 4px 10px white; /* Shadow for depth */
+    border-radius: 10px;
     transition: all 0.3s ease; /* Smooth transition for hover effects */
 }
 
@@ -282,13 +284,11 @@ i {
 
 .skills-container {
     background-color: whitesmoke;
-    /* White background */
-    border-radius: 15px;
     /* Rounded edges */
     padding: 20px 50px;
     
-    /* Padding inside the container */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px white; /* Shadow for depth */
+    border-radius: 10px;
     /* Optional: adds a subtle shadow */
     max-width: 80%;
     /* Adjust this value to control the width */
@@ -340,8 +340,9 @@ i {
 
 .btn-success {
     outline: none !important;
-    box-shadow: none !important;
     border: 2px solid #08133F;
+    box-shadow: 0 4px 10px white; /* Shadow for depth */
+    border-radius: 10px;
 }
 
 .btn-success:hover {
