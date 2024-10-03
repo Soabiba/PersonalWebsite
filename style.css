@@ -29,7 +29,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: #d875ff;
+    background: #1b9aaa;
     clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
     z-index: 0;
 }
@@ -56,7 +56,7 @@ body {
 }
 
 .navbar .navbar-brand {
-    color: #d875ff;
+    color: #1b9aaa;
     text-shadow: 2px 2px 4px #000000;
 }
 
@@ -73,12 +73,12 @@ body {
 }
 
 .navbar .navbar-nav .nav-link {
-    color: #d875ff;
+    color: #1b9aaa;
     text-shadow: 2px 2px 4px #000000;
 }
 
 .navbar-toggler {
-    border-color: #d875ff;
+    border-color: #1b9aaa;
     text-shadow: 2px 2px 4px #000000;
 }
 
@@ -206,7 +206,7 @@ body {
 
 i {
     font-size: 2rem;
-    color: #d875ff;
+    color: #1b9aaa;
     transition: transform 0.3s ease;
 }
 
@@ -261,7 +261,7 @@ i {
 }
 
 .btn:hover {
-    background-color: #d875ff;
+    background-color: #1b9aaa;
 }
 
 .skills-container h2 {
@@ -338,6 +338,16 @@ i {
     /* Adjust the space between cards */
 }
 
+form {
+    max-width: 100%; /* Limit the width of the form */
+    margin: 0 auto; /* Center the form horizontally */
+    background-color: #f8f9fa; /* Light background color */
+    padding: 15px; /* Padding around the form */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+
 .btn-success {
     outline: none !important;
     border: 2px solid #08133F;
@@ -361,7 +371,7 @@ i {
 .fa-discord:hover,
 .fa-envelope:hover,
 .fa-slack:hover {
-    color: #d875ff;
+    color: #1b9aaa;
 }
 
 .fab {
@@ -376,6 +386,6 @@ i {
 
 /* footer styling */
 #footer {
-    background-color: #899CE8;
+    background-color: #7c898b;
     text-align: center;
 }
