@@ -1,46 +1,85 @@
+/* Initially hide elements for fade-in */
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.6s ease-out;
+}
+
+/* When active, show the element */
+.fade-in.active {
+    opacity: 1;
+}
+
+.diagonal-section {
+    position: relative;
+    padding: 100px 0;
+    background-color: #08133F;
+    color: white;
+    clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
+}
+
+.diagonal-section .content {
+    position: relative;
+    z-index: 1;
+}
+
+.diagonal-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #d875ff;
+    clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
+    z-index: 0;
+}
+
 body {
-    background-color: #020C1E; 
-    font-family:  'Roboto';
+    background-color: #020C1E;
+    font-family: 'Roboto';
     color: #e3e4e5;
 }
 
 .navbar {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1030; /* Bootstrap's default z-index for the navbar */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1030;
+    /* Bootstrap's default z-index for the navbar */
 }
 
 .navbar {
-  background-color: rgba(2, 12, 30, 0.6); 
-  backdrop-filter: blur(10px); 
-  -webkit-backdrop-filter: blur(10px); 
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3); 
+    background-color: rgba(2, 12, 30, 0.6);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 .navbar .navbar-brand {
-    color: #00FFFF;
-  text-shadow: 2px 2px 4px #000000;
+    color: #d875ff;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 .navbar .navbar-brand:hover,
 .navbar .navbar-nav .nav-link:hover {
-    color: #00FFFF;
+    color: #e3e4e5;
 }
 
 .navbar.toggled {
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
-    backdrop-filter: blur(10px); /* This creates the blur effect */
+    background: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent black background */
+    backdrop-filter: blur(10px);
+    /* This creates the blur effect */
 }
 
 .navbar .navbar-nav .nav-link {
-    color:  #00FFFF;
-  text-shadow: 2px 2px 4px #000000;
+    color: #d875ff;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 .navbar-toggler {
-    border-color:  #00FFFF;
-  text-shadow: 2px 2px 4px #000000;
+    border-color: #d875ff;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 .navbar-toggler-icon {
@@ -53,8 +92,8 @@ body {
     background: url('images/Untitled.png') no-repeat center center/cover;
     position: relative;
     display: flex;
-    align-items: center; 
-    justify-content: flex-end; 
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .hero-text {
@@ -64,207 +103,272 @@ body {
     right: 0;
     transform: translateY(-50%);
     color: white;
-  text-shadow: 2px 2px 4px #f7ad37;
+    text-shadow: 2px 2px 4px #f7ad37;
 }
+
 /* About Section */
-#about h1, #services h1, #portfolio h1, #contact h1 {
+#about h1,
+#services h1,
+#portfolio h1,
+#contact h1 {
     text-decoration: underline;
-    text-decoration-color: #f7ad37; 
-    text-decoration-thickness: 2px; 
-    text-underline-offset: 8px; 
-    font-family: 'Roboto'; 
-    text-align: center; 
+    text-decoration-color: #f7ad37;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 8px;
+    font-family: 'Roboto';
+    text-align: center;
 }
 
 #about {
-    color: #e3e4e5; 
-    padding: 6%; 
-  padding-top: 100PX; 
-  padding-bottom: 150px; 
-  position: relative;
-  font-family: 'Roboto'
+    color: #e3e4e5;
+    padding: 7%;
+    padding-top: 70PX;
+    padding-bottom: 70px;
+    position: relative;
+    font-family: 'Roboto'
 }
 
 .abouttext {
-  padding-bottom: 50px; 
-  padding-left: 2%;
+    padding-bottom: 50px;
+    padding-left: 2%;
 }
 
 .imageAboutPage {
-  border: 2px solid whitesmoke;
-  border-radius: 8px;
-  width: 400px;
+    border: 2px solid whitesmoke;
+    border-radius: 8px;
+    width: 400px;
 }
 
 
-  #services {
+#services {
     background-color: whitesmoke;
     color: #08133F;
-    padding-top: 150px; 
-    padding-bottom: 150px;
+    padding-top: 70px;
+    padding-bottom: 70px;
     position: relative;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px; /* Adjust the space between cards */
-  }
-
-  .servicesText.card {
-    height: 300px;
-    text-align: center;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .servicesIcon {
-      font-size: 36px;
-      text-align: center;
-      width: 100%;
-  }
-
-.card-title {
-    text-align: center;
-}
-.card:hover .servicesIcon {
-    color: #00FFFF;
-}
-.servicesText:hover {
-    border: 1px solid #00FFFF;
+    gap: 20px;
+    /* Adjust the space between cards */
 }
 
-.card-flip {
-    perspective: 1000px;
-    width: 100%; /* Adjust width to make cards smaller */
-}
-
-.card-flip .servicesText {
+.servicesText {
+    position: relative;
+    width: 100%;
+    height: 200px; /* Adjust height as needed */
     transition: transform 0.6s;
     transform-style: preserve-3d;
-    position: relative;
-    width: 100%; /* Ensure the card occupies the full width of its parent */
-    min-height: 300px; /* Adjust based on content */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
 }
 
+/* Card Flip Container */
+.card-flip {
+    perspective: 1000px;
+    margin-bottom: 20px;
+}
+
+/* Add this to make sure the hover effect only happens on the container */
 .card-flip:hover .servicesText {
-    transform: rotateY(180deg);
+    transform: rotateY(180deg); /* Flip the card */
 }
 
+/* Front and Back face */
 .front, .back {
-    backface-visibility: hidden;
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
+    backface-visibility: hidden; /* Ensures no mirrored text */
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    text-align: center;
 }
 
-.back {
-    transform: rotateY(180deg);
-    background-color: #f8f9fa; /* Choose a background color for the back */
+/* Front Side */
+.front {
+    background-color: #f9f9f9;
+    color: #08133F;
+    z-index: 2;
 }
+
+/* Back Side */
+.back {
+    background-color: #08133F;
+    color: white;
+    transform: rotateY(180deg); /* Ensures correct rotation for the back */
+    z-index: 1;
+}
+
+/* Styling */
+.card-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 5px;
+    color: #08133F;
+}
+
+.card-text {
+    font-size: 0.85rem;
+    line-height: 1.3;
+}
+
+i {
+    font-size: 2rem;
+    color: #d875ff;
+    transition: transform 0.3s ease;
+}
+
+.front i:hover {
+    transform: scale(1.1);
+}
+
 
 #portfolio {
-  padding-top: 150px;
-  padding-bottom: 150px;
-  text-align: center;
-  align-items: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    text-align: center;
+    align-items: center;
 }
 
 /* Styling the button */
 .btn {
     display: inline-block;
-    padding: 10px 10px;
-    background-color: white;
-    color: #08133F;
+    padding: 15px 30px; /* Increase padding to make the button larger */
+    background-color: white; /* Brighter, standout background color */
+    color: #08133F; /* White text for better contrast */
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 8px; /* Slightly larger border-radius for a smoother appearance */
+    font-size: 1.2rem; /* Larger font size for readability */
     font-weight: bold;
-  
+    box-shadow: 0 4px 10px rgba(255, 220, 255, 0.15); /* Add shadow for depth */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
 }
+
 
 .btncontainer {
     text-align: center;
 }
+
 .btn:hover {
-    background-color: #00FFFF;
+    background-color: #d875ff;
 }
 
 .skills-container h2 {
-    color: #08133F; /* Example: sets the color to a blue shade */
-  padding-bottom: 1.2cap;
-  text-decoration: underline;
-  text-decoration-color:#00FFFF; 
-  text-decoration-thickness: 2px; 
-  text-underline-offset: 8px; 
+    color: #08133F;
+    /* Example: sets the color to a blue shade */
+    padding-bottom: 1.2cap;
+    text-decoration: underline;
+    text-decoration-color: #f7ad37;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 8px;
 }
 
 .skills-section {
     display: flex;
-    justify-content: center; /* Center the container horizontally */
-    padding: 10px 10px; /* Add some padding above and below the container */
+    justify-content: center;
+    /* Center the container horizontally */
+    padding: 10px 10px;
+    /* Add some padding above and below the container */
 }
 
 .skills-container {
-    background-color: whitesmoke; /* White background */
-    border-radius: 15px; /* Rounded edges */
-    padding: 10px; /* Padding inside the container */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
-    max-width: 80%; /* Adjust this value to control the width */
-    text-align: center; /* Center the text and content */
+    background-color: whitesmoke;
+    /* White background */
+    border-radius: 15px;
+    /* Rounded edges */
+    padding: 20px 50px;
+    
+    /* Padding inside the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Optional: adds a subtle shadow */
+    max-width: 80%;
+    /* Adjust this value to control the width */
+    text-align: center;
+    /* Center the text and content */
 }
 
 .skills-icons {
     display: flex;
-    justify-content: center; /* Center the icons horizontally */
-    flex-wrap: wrap; /* Allow icons to wrap in smaller screens */
-    gap: 20px; /* Space between icons */
+    justify-content: center;
+    /* Center the icons horizontally */
+    flex-wrap: wrap;
+    /* Allow icons to wrap in smaller screens */
+    gap: 30px;
+    /* Space between icons */
 }
 
 .custom-icon-img {
     /* Your custom icon styles */
-    transition: transform 0.3s ease; /* Example transformation on hover */
+    transition: transform 0.3s ease;
 }
 
 .custom-icon-img:hover {
-    transform: scale(1.1); /* Slightly enlarge the icon on hover */
+    transform: scale(1.1);
+    /* Slightly enlarge the icon on hover */
 }
 
 .projectss-container h2 {
-  padding-bottom: 1.2cap;
-  text-decoration: underline;
-  text-decoration-color:#00FFFF; 
-  text-decoration-thickness: 2px; 
-  text-underline-offset: 8px; 
+    padding-bottom: 1.2cap;
+    text-decoration: underline;
+    text-decoration-color: #f7ad37;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 8px;
 }
 
 #contact {
-  background-color: whitesmoke;
-  color: #08133F;
-  text-align: center;
-  padding-top: 150px; 
-  padding-bottom: 150px;
-  position: relative;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 20px; /* Adjust the space between cards */
+    background-color: whitesmoke;
+    color: #08133F;
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* Adjust the space between cards */
+}
+
+.btn-success {
+    outline: none !important;
+    box-shadow: none !important;
+    border: 2px solid #08133F;
+}
+
+.btn-success:hover {
+    border-color: #08133F !important;
 }
 
 .social-icons {
     font-size: 36px;
     cursor: pointer;
 }
-  .fa-facebook:hover, .fa-instagram:hover, .fa-whatsapp:hover, .fa-linkedin:hover, .fa-discord:hover, .fa-slack:hover{
-    color: #00FFFF;
+
+.fa-facebook:hover,
+.fa-instagram:hover,
+.fa-whatsapp:hover,
+.fa-linkedin:hover,
+.fa-discord:hover,
+.fa-envelope:hover,
+.fa-slack:hover {
+    color: #d875ff;
 }
+
 .fab {
     color: #000000;
 }
+
+
+.fa-envelope {
+    color: #000000;
+}
+
+
 /* footer styling */
 #footer {
     background-color: #899CE8;
