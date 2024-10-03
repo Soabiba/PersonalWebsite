@@ -250,7 +250,6 @@ i {
     text-decoration: none;
     font-size: 1.2rem; /* Larger font size for readability */
     font-weight: bold;
-    box-shadow: 0 4px 10px white; /* Shadow for depth */
     border-radius: 10px;
     transition: all 0.3s ease; /* Smooth transition for hover effects */
 }
@@ -351,7 +350,6 @@ form {
 .btn-success {
     outline: none !important;
     border: 2px solid #08133F;
-    box-shadow: 0 4px 10px white; /* Shadow for depth */
     border-radius: 10px;
 }
 
