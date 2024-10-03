@@ -140,71 +140,35 @@ body {
 }
 
 
-#services {
+  #services {
     background-color: whitesmoke;
     color: #08133F;
-    padding-top: 70px;
+    padding-top: 70px; 
     padding-bottom: 70px;
     position: relative;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
-    /* Adjust the space between cards */
-}
+    gap: 20px; /* Adjust the space between cards */
+  }
 
-.servicesText {
-    position: relative;
-    width: 100%;
-    height: 200px; /* Adjust height as needed */
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-/* Card Flip Container */
-.card-flip {
-    perspective: 1000px;
-    margin-bottom: 20px;
-}
-
-/* Add this to make sure the hover effect only happens on the container */
-.card-flip:hover .servicesText {
-    transform: rotateY(180deg); /* Flip the card */
-}
-
-/* Front and Back face */
-.front, .back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden; /* Ensures no mirrored text */
+.servicesText.card {
+    height: 250px;
+    text-align: center;
+    cursor: pointer;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 15px;
-    text-align: center;
-}
+    transition: transform 0.6s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    border-radius: 10px;
+  }
 
-/* Front Side */
-.front {
-    background-color: #f9f9f9;
-    color: #08133F;
-    z-index: 2;
-}
+  .servicesIcon {
+      font-size: 36px;
+      text-align: center;
+      width: 100%;
+  }
 
-/* Back Side */
-.back {
-    background-color: #08133F;
-    color: white;
-    transform: rotateY(180deg); /* Ensures correct rotation for the back */
-    z-index: 1;
-}
-
-/* Styling */
 .card-title {
     font-size: 1.1rem;
     font-weight: bold;
@@ -213,8 +177,29 @@ body {
 }
 
 .card-text {
-    font-size: 0.85rem;
+    font-size: 1,1rem;
     line-height: 1.3;
+}
+
+.card-flip {
+    perspective: 1000px;
+      margin-bottom: 20px;
+    width: 100%; /* Adjust width to make cards smaller */
+    height: 250px;
+    display: flex;
+    justify-content: center;
+}
+
+.card-flip .servicesText {
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+    width: 100%; /* Ensure the card occupies the full width of its parent */
+    min-height: 250px; /* Adjust based on content */
+}
+
+.card-flip:hover .servicesText {
+    transform: rotateY(180deg);
 }
 
 i {
@@ -227,6 +212,25 @@ i {
     transform: scale(1.1);
 }
 
+.front, .back {
+    backface-visibility: hidden;
+    position: absolute;                       
+    width: 100%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.back {
+    transform: rotateY(180deg);
+}
+
+.back p {
+    font-size: 1.1rem;
+    line-height: 1.3;
+}
 
 #portfolio {
     padding-top: 70px;
