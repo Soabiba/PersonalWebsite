@@ -336,14 +336,10 @@ i {
   transition: transform 0.3s ease;
 }
 
-.project-card:hover {
-  transform: scale(1.03);
-}
-
 .project-content {
   background-color: #fff;
   box-shadow: 0 4px 10px #040b1d;
-  border-radius: 15px;
+  border-radius: 10px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -356,9 +352,9 @@ i {
   height: auto;
   transition: transform 0.3s ease;
 }
-
-.project-card:hover .project-image img {
-  transform: scale(1.05);
+            
+.project-image img {
+  transform: scale(.9);
 }
 
 /* Project Video Styling */
@@ -366,12 +362,13 @@ i {
 .project-video video {
   width: 100%;
   height: auto;
-  border-radius: 15px;
+  border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 .project-card:hover .project-video iframe,
 .project-card:hover .project-video video {
-  transform: scale(1.05); /* Optional zoom-in effect on hover */
   transition: transform 0.3s ease;
 }
 
@@ -390,14 +387,43 @@ i {
 .project-description {
   font-size: 1rem;
   color: #606060;
+  margin-bottom: 10px;
+}
+
+/* Gallery Styling */
+.project-gallery {
+  display: grid; /* Use CSS grid */
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  grid-gap: 10px; /* Space between images */
+  justify-content: center; /* Aligns the grid to the center horizontally */
+  margin-top: 40px; /* Add space above the gallery */
   margin-bottom: 20px;
 }
 
+.project-gallery img {
+  width: 100%; /* Each image takes up full width of the grid cell */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.project-gallery img:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Responsive design: for smaller screens */
+@media (max-width: 768px) {
+  .project-gallery {
+    grid-template-columns: 1fr; /* Stacks the images in one column on small screens */
+  }
+}
+
 .project-btn {
-  padding: 10px 25px;
+  padding: 10px 40px;
   background-color:  #1b9aaa;
-  color: #fff;
-  border-radius: 25px;
+  color: #ffffff;
+  border-radius: 10px;
   text-decoration: none;
   transition: background-color 0.3s ease;
 }
